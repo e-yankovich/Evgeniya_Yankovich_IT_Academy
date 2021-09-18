@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .day {
+        width: 100px;
+        text-align: center;
+        background: rgb(221, 221, 221);
+        border-style: solid;
+        border-radius: 8px;
+        border-width: 1px;
+    }
+    .food{
+        width: 100px;
+        text-align: center;
+        background: rgb(221, 221, 221);
+        border-style: solid;
+        border-radius: 8px;
+        border-width: 1px;
+    }
+    .menu li {
+        float: left;
+    }
+    .submenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu_item > .submenu {
+        visibility: hidden;
+        display: none; 
+    }
+    .menu_item:hover > .submenu {
+        visibility: visible;
+        display: flex; 
+    }
+    .menu_item:hover > .day{
+        background: grey;
+    }
+    @media all and (max-device-width:500px) {
+        .menu li {
+            float: none;
+        }
+    }
+    </style>
+</head>
+<body>
+   <ul class="menu">
+        <li class="menu_item">
+            <button type="button" class="day">Понедельник</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+        <li class="menu_item"><button type="button" class="day">Вторник</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+        <li class="menu_item"><button type="button" class="day">Среда</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+        <li class="menu_item"><button type="button" class="day">Четверг</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+        <li class="menu_item"><button type="button" class="day">Пятница</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+        <li class="menu_item"><button type="button" class="day">Суббота</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+        <li class="menu_item"><button type="button" class="day">Воскресенье</button>
+            <ul class="submenu">
+                <li><button type="button" class="food">Завтрак</button></li>
+                <li><button type="button" class="food">Обед</button></li>
+                <li><button type="button" class="food">Ужин</button></li>
+            </ul>
+        </li>
+   </ul>
+</body>
+</html>
